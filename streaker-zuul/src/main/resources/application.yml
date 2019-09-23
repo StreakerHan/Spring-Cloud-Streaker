@@ -1,0 +1,19 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/
+server:
+  port: 9002
+spring:
+  application:
+    name: zuul
+  servlet:
+    multipart:
+      max-file-size: 500MB
+      max-request-size: 500MB
+ribbon:
+    ReadTimeout: 60000
+    ConnectTimeout: 60000
+
+
+
